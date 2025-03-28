@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <left>
+      <VBox prefHeight="377.0" prefWidth="630.0" style="-fx-background-color: #C0C0C0;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField id="searchField" fx:id="searchField" prefHeight="26.0" prefWidth="486.0" promptText="Tìm sản phẩm theo tên" />
+            <Button id="bntSearch" fx:id="bntSearch" mnemonicParsing="false" onAction="#searchProduct" text="Tìm kiếm sản phẩm" />
+            <TextField id="txtProductId" fx:id="txtProductId" promptText="Mã sản phẩm" />
+            <TextField id="txtProductName" fx:id="txtProductName" promptText="Tên sản phẩm" />
+            <TextField id="txtPrice" fx:id="txtPrice" promptText="Giá" />
+            <Button id="bntAdd" fx:id="bntAdd" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addProduct" prefHeight="26.0" prefWidth="82.0" text="Thêm" />
+            <Button id="btnDelete" fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="26.0" prefWidth="82.0" text="Xóa" />
+            <Button id="bntUpdate" fx:id="bntUpdate" mnemonicParsing="false" onAction="#updateProduct" prefHeight="26.0" prefWidth="82.0" text="Cập nhật" />
+            <TableView id="productTable" fx:id="productTable" onMouseClicked="#selectProduct" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #C0C0C0;">
+              <columns>
+                <TableColumn id="columnProductId" fx:id="columnProductId" prefWidth="98.40002137422562" text="Mã sản phẩm" />
+                <TableColumn id="columnProductName" fx:id="columnProductName" minWidth="0.0" prefWidth="322.3999786376953" text="Tên sản phẩm" />
+                  <TableColumn id="columnPrice" fx:id="columnPrice" prefWidth="205.60009765625" text="Giá" />
+              </columns>
+            </TableView>
+         </children></VBox>
+   </left>
+</BorderPane>

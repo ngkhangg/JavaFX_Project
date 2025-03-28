@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="444.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController2">
+   <children>
+      <Label layoutX="23.0" layoutY="45.0" text="Tài Khoản" textFill="#000dff" />
+      <Label layoutX="23.0" layoutY="107.0" text="Mật Khẩu" textFill="#000dff" />
+      <Label id="lblInfo" fx:id="lblInfo" layoutX="95.0" layoutY="137.0" text="Thông tin đăng nhập" textFill="#0e4be7" />
+      <TextField id="txtUser" fx:id="txtUser" layoutX="98.0" layoutY="41.0" prefHeight="26.0" prefWidth="275.0" promptText="Tên Tài Khoản" />
+      <Button layoutX="95.0" layoutY="188.0" mnemonicParsing="false" onAction="#dangnhap_clicked" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #00FFFF;" text="Đăng nhập" />
+      <Button layoutX="236.0" layoutY="188.0" mnemonicParsing="false" onAction="#dk" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #00FFFF;" text="Đăng ký" />
+      <PasswordField id="txtPassword" fx:id="txtPassword" layoutX="95.0" layoutY="102.0" prefHeight="26.0" prefWidth="275.0" promptText="Mật Khẩu " />
+   </children>
+</AnchorPane>
